@@ -1,0 +1,14 @@
+<header class="bg-blue-500 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a routerLink="/" class="text-xl font-bold">Sound</a>
+      <nav>
+        <a routerLink="" class="mr-4">Home</a>
+        <a routerLink="/login" class="mr-4" *ngIf="authService.isAuthenticated()==false">Login</a>
+        <a routerLink="/register" class="mr-4" *ngIf="authService.isAuthenticated()==false">Register</a>
+        <a routerLink="/library" class="mr-4" *ngIf="authService.isAuthenticated()==true">Library</a>
+        <a class="cursor-pointer" (click)="logout()" *ngIf="authService.isAuthenticated()==true" >Logout</a>
+        
+      </nav>
+    </div>
+  </header>
+  
