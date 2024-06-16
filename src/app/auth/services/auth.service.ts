@@ -11,7 +11,7 @@ import { Configuration } from '../../configuration/configuration';
   providedIn: 'root',
 })
 export class AuthService {
-  private authUrl = Configuration.authUrl;
+  private authUrl = Configuration.apiUrl;
 
   constructor(
     private http: HttpClient,

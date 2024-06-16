@@ -1,3 +1,3 @@
 export class Configuration{
-    public static authUrl:string = 'http://localhost:5132';
+    public static apiUrl:string = 'http://localhost:5132';
 }

@@ -16,6 +16,7 @@ import { AuthGuard } from './auth/guards/auth.guard';
 import { AuthInterceptor } from './auth/interceptors/auth.interceptor';
 import { AuthService } from './auth/services/auth.service';
 import { LibraryComponent } from './pages/library/library.component';
+import { AudioItemComponent } from './components/audio-item/audio-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LibraryComponent } from './pages/library/library.component';
     RegisterComponent,
     HomeComponent,
     SecuredPageComponent,
-    LibraryComponent
+    LibraryComponent,
+    AudioItemComponent
   ],
   imports: [
     BrowserModule,

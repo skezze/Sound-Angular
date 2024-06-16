@@ -1,4 +1,7 @@
-<div>
-    <h2>Welcome to the home page!</h2>
-</div>
+<div class="max-w-lg mx-auto mt-10">
+    <h2 class="text-2xl font-bold mb-4 text-center">Sound List</h2>
+    <div *ngFor="let sound of sounds">
+      <app-audio-item [name]="sound.name" [src]="sound.src"></app-audio-item>
+    </div>
+  </div>
   
